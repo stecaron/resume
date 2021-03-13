@@ -8,3 +8,5 @@
 *.lof
 *.out
 *.lot
+*.bcf
+*.run.xml
