@@ -1,0 +1,10 @@
+# Ignore latex stuffs
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.bbl
+*.blg
+*.lof
+*.out
+*.lot
