@@ -1,0 +1,167 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+\usepackage{fontawesome}
+
+
+\begin{document}
+\name{STÉPHANE CARON}
+\tagline{Scientifique de données}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ste.caron@icloud.com}
+  \phone{581 997-5006}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Montréal, Canada}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+  \linkedin{\href{https://www.linkedin.com/in/ste-caron/}{linkedin.com/in/ste-caron/}}
+  \github{\href{https://github.com/stecaron}{github.com/stecaron}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Expérience}
+
+\cvevent{Scientifique de données principal}{Intact Assurance}{Juin 2019 -- Aujourd'hui}{Montréal, Canada}
+\begin{itemize}
+	\item Travaillé sur différents projets utilisant les photos de véhicules accidentés (estimation de dommages, détermination de perte total, etc).
+	\item Utilisé des regréssions linéaires et des séries temporelles pour développer un modèle de réserves permettant de prédire la valeur ultime d'une réclamation.
+	\item Impliqué dans le processus d'intrevues des stagiaires en science de données.
+\end{itemize}
+
+\smallskip
+
+\cvevent{Analyste en actuariat}{Intact Assurance}{Mar 2018 - Juin 2019}{Québec, Canada}
+\begin{itemize}
+	\item Développé un modèle de détection de fraudes permettant de prioriser les réclamations à investiguer.
+\end{itemize}
+
+\divider
+
+\cvevent{Analyste en actuariat}{Promutuel Assurance}{Mai 2015 - Mar 2018}{Québec, Canada}
+\begin{itemize}
+	\item Développé plusieurs rapports dynamiques sur les performances d'assurance utilisant des outils comme \texttt{RMarkdown} et \texttt{shiny}.
+	\item Créé plusieurs programmes d'extraction de données.
+	\item Travaillé sur le développement et l'intégration du premier produit de télématique dans l'entreprise.
+\end{itemize}
+
+\cvsection{Réalisations}
+\smallskip
+\begin{itemize}
+	\item Associé de la Casualty Actuarial Society (ACAS).
+	\item École d'hiver IVADO/MILA en apprentissage profond (2018).
+	\item Président de \href{https://www.dotlayer.org/about/}{.Layer}, une OSBL impliquée dans la communauté d'apprentissage automatique de Québec.
+	\item Vice-Président Sports de l'association des étudiants en actuariat de l'Université Laval (2 années).
+\end{itemize}
+
+\cvsection{COMPÉTENCES TECHNIQUES}
+\smallskip
+\begin{itemize}
+	\item R, Python, Git, LaTeX, SQL, Excel, VBA, SAS
+	\item Linux, AWS Cloud Computing (débutant), Docker (débutant)
+\end{itemize}
+
+\cvsection{COMPÉTENCES PERSONNELLES}
+\smallskip
+\begin{itemize}
+	\item Qualités de leadership et bon joueur d'équipe.
+	\item Habilité à initier des projets de recherche et développement.
+\end{itemize}
+
+\cvsection{PASSE-TEMPS}
+\smallskip
+\begin{itemize}
+\item Pêcher, chasser et faire des randonnées en forêt.
+\item Voyager et découvrir de nouveaux endroits.
+\item Cuisiner et goûter de nouveaux plats.
+\end{itemize}
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
+

@@ -19,6 +19,13 @@
 \addbibresource{sample.bib}
 
 \usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
 \usepackage{fontawesome}
 
 
@@ -31,13 +38,13 @@
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   \email{ste.caron@icloud.com}
-  \phone{581-997-5006}
+  \phone{581 997-5006}
 %  \mailaddress{Address, Street, 00000 County}
   \location{Montréal, Canada}
 %  \homepage{marissamayr.tumblr.com/}
 %  \twitter{@marissamayer}
-  \linkedin{https://www.linkedin.com/in/stéphane-caron-45828267/}
-  \github{https://github.com/stecaron}
+  \linkedin{\href{https://www.linkedin.com/in/ste-caron/}{linkedin.com/in/ste-caron/}}
+  \github{\href{https://github.com/stecaron}{github.com/stecaron}}
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
 }
 
@@ -64,16 +71,16 @@
 
 \smallskip
 
-\cvevent{Actuarial analyst}{Intact Insurance}{Mar 2018 - June 2019}{Quebec, Canada}
+\cvevent{Actuarial analyst}{Intact Insurance}{Mar 2018 - June 2019}{Québec, Canada}
 \begin{itemize}
 \item Developed a fraud detection model intented to detect suspicious claims reported to the company.
 \end{itemize}
 
 \divider
 
-\cvevent{Actuarial analyst}{Promutuel Assurance}{Mai 2015 - Mar 2018}{Quebec, Canada}
+\cvevent{Actuarial analyst}{Promutuel Assurance}{May 2015 - Mar 2018}{Québec, Canada}
 \begin{itemize}
-	\item Developped several dynamic reports on company performances using R reporting tools such as \texttt{RMarkdown} and \texttt{shiny}.
+	\item Developed several dynamic reports on company performances using R reporting tools such as \texttt{RMarkdown} and \texttt{shiny}.
 	\item Created and maintened many data extractions programs.
 	\item Worked on the development and integration of the first usage based insurance product in the company.
 \end{itemize}
@@ -90,7 +97,7 @@
 \cvsection{TECHNICAL SKILLS}
 \smallskip
 \begin{itemize}
-\item R, Python, SQL, Excel, VBA, SAS
+\item R, Python, Git, LaTeX, SQL, Excel, VBA, SAS
 \item Linux, AWS Cloud Computing (beginner), Docker (beginner)
 \end{itemize}
 
